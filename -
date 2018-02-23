@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--META-->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+            <title>SPINE Components</title>
+            <meta name="description" content="Using Storj, Polymer, Ipfs, Node, and Express to create Modular Decentralized Web Apps quickly">
+            <base href="/">
+        <!--/META-->
+        <!--COMPONENTS-->
+            <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+			<script type="module" src="./src/polymer_web_components/components/materialize-tabs.js"></script>
+			<script type="module" src="./src/polymer_web_components/components/materialize-footer.js"></script>
+			<script type="module" src="./src/polymer_web_components/components/materialize-table.js"></script>
+        <!--/COMPONENTS-->
+        <!--STYLES-->
+            <link rel="stylesheet" href="https://ipfs.io/ipfs/QmZjRLPbC5TRshn1zmJQU7KWVj125y7xx68GS7vkAwbWdv/materialize.min.css"></link>
+            <link rel="stylesheet" href="src/colors.css">
+            <style>body{    min-height: 100vh;display: flex; flex-direction: column;}
+             main {
+                     flex: 1 0 auto;
+                       }
+            </style>
+        <!--/STYLES-->
+    </head>
+    <body>
+        <header>
+            <materialize-tabs
+                tab1="Spine Drive" link1="#"
+                >
+            </materialize-tabs>
+        </header>
+        <main>
+            <section class="row" id="table-section">
+                <materialize-table></materialize-table>
+            </section>
+        </main>
+        <materialize-footer></materialize-footer>
+        <!--SCRIPTS-->
+            <script src="https://ipfs.io/ipfs/QmZjRLPbC5TRshn1zmJQU7KWVj125y7xx68GS7vkAwbWdv/materialize.min.js"></script>
+        <!--/SCRIPTS-->
+	</body>
+</html>
